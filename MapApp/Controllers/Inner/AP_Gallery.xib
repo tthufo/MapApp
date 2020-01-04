@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AP_Gallery" id="eh2-ZZ-Qx1">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fRL-r6-ah1">
+                        <rect key="frame" x="0.0" y="0.0" width="146" height="146"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fRL-r6-ah1" firstAttribute="top" secondItem="eh2-ZZ-Qx1" secondAttribute="top" id="7AN-Ga-a65"/>
+                <constraint firstItem="fRL-r6-ah1" firstAttribute="leading" secondItem="eh2-ZZ-Qx1" secondAttribute="leading" id="BeG-Xc-Ncg"/>
+                <constraint firstAttribute="trailing" secondItem="fRL-r6-ah1" secondAttribute="trailing" id="UHH-cD-m5x"/>
+                <constraint firstAttribute="bottom" secondItem="fRL-r6-ah1" secondAttribute="bottom" id="i82-Ts-EIY"/>
+            </constraints>
+            <size key="customSize" width="146" height="146"/>
+            <point key="canvasLocation" x="415" y="272"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+//
+//  PrefixHeader.pch
+//  MapApp
+//
+//  Created by Thanh Hai Tran on 4/9/18.
+//  Copyright © 2018 Thanh Hai Tran. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifndef APPDELEGATE
+#define APPDELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#endif
+
+#define screenHeight1 [UIScreen mainScreen].bounds.size.height
+#define screenWidth1 [UIScreen mainScreen].bounds.size.width
+
+#define DegreesToRadians(x) ((x) * M_PI / 180.0)
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+#define RAND_FROM_TO(min, max) (min + arc4random_uniform(max - min + 1))
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define IS_IPHONE_4_OR_LESS (SCREEN_MAX_LENGTH < 568.0)
+
+#define IS_IPHONE_5 (SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (SCREEN_MAX_LENGTH == 736.0)
+
+#define dDeviceOrientation [[UIDevice currentDevice] orientation]
+#define isPortrait  UIDeviceOrientationIsPortrait(dDeviceOrientation)
+#define isLandScape UIDeviceOrientationIsLandscape(dDeviceOrientation)
+#define isFaceUp    dDeviceOrientation == UIDeviceOrientationFaceUp   ? YES : NO
+#define isFaceDown  dDeviceOrientation == UIDeviceOrientationFaceDown ? YES : NO
+
+#define kAvatar [UIImage imageNamed:@"map"]
+
+//#define APIMAP @"AIzaSyDllvIcY6uc_T0Im4QHmd-Ua60aV6wgAQY"
+
+#define APIMAP @"AIzaSyA2xUN8Yi-7TlMYm0EPB_DeYqE4Q4jOQ90"//
+
+#import "FBPlugInHeader.h"
+
+#import "ObjectInfo.h"
+
+#import "JSONKit.h"
+
+#import <UIImageView+WebCache.h>
+
+#import "AppDelegate.h"
+
+#import "EM_MenuView.h"
+
+#import "E_Overlay_Menu.h"
+
+#import "YouTube.h"
+
+
+#endif /* PrefixHeader_pch */
